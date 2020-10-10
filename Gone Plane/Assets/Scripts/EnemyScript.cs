@@ -43,7 +43,7 @@ public class EnemyScript : MonoBehaviour
             Auds.PlayOneShot(audClip);
 
             Debug.Log("working");
-            GameDataManager.AddCoins(32);
+            GameDataManager.AddCoins(1);
 
             // Cheating (while moving hold key "C" to get extra coins) 
 			#if UNITY_EDITOR

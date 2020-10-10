@@ -291,12 +291,7 @@ MonoBehaviour:
   rotatespeed: 100
   audClip: {fileID: 8300000, guid: 7551c3bc19bf38a488f2004b2833401c, type: 3}
   Auds: {fileID: 0}
-  fruitPrefab: {fileID: 0}
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  minDelay: 4
-  maxDelay: 6
+  death: {fileID: 2912282641157605797, guid: 81ba1d20103f4024da252bb1dffd8c82, type: 3}
 --- !u!1 &4707792527806504603
 GameObject:
   m_ObjectHideFlags: 0

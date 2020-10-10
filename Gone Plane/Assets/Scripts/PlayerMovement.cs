@@ -11,19 +11,15 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioClip audClip;
     public AudioSource Auds;
-    
-     
+
+    public GameObject death;
 
 
     bool GameOver = false;
 
     Rigidbody2D rb;
 
-    Camera cam;
-
-
-
-    
+    Camera cam; 
 
    
 
@@ -101,12 +97,26 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<PolygonCollider2D>().enabled = false;
             GetComponentInChildren<ParticleSystem>().Play();
             Auds.PlayOneShot(audClip);
-            Invoke("restart", 2f);
+            Invoke("restart",2f);
+           
         }
     }
 
     void restart()
     {
-        SceneManager.LoadScene(0);
+
+        Instantiate(death);
+        Time.timeScale = 0f;
     }
+
+    public void des()
+    {
+       
+        Destroy(gameObject);
+        Time.timeScale = 1f;
+        
+    }
+
+   
+
 }
