@@ -63,7 +63,7 @@ public class EnemyScript : MonoBehaviour
             Debug.Log("dd");
             Auds.PlayOneShot(audClip);
             Destroy(gameObject);
-            GameDataMF.AddCoins(32);
+            GameDataMF.AddCoins(1);
             // Cheating (while moving hold key "C" to get extra coins) 
             #if UNITY_EDITOR
 			if (Input.GetKey (KeyCode.C))
@@ -78,7 +78,7 @@ public class EnemyScript : MonoBehaviour
             Debug.Log("dd");
             Auds.PlayOneShot(audClip);
             Destroy(gameObject);
-            GameDataMH.AddCoins(32);
+            GameDataMH.AddCoins(1);
             // Cheating (while moving hold key "C" to get extra coins) 
             #if UNITY_EDITOR
 			if (Input.GetKey (KeyCode.C))

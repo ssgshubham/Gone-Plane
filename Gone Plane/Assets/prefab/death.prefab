@@ -876,7 +876,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2912282641157605799}
-        m_MethodName: world1
+        m_MethodName: theme0
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
